@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Enter your name:
+    input(type="text", data-bind="value: name")
+  p Enter your age: 
+    input(type="number", data-bind="value: age")
+  p 
+    span(data-bind="text: message")
+  p 
+    input(type="button", data-bind="enable: gameState", title="Place Bet")
